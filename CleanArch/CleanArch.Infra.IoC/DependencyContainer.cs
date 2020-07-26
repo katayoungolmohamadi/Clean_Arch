@@ -15,9 +15,11 @@ namespace CleanArch.Infra.IoC
         {
             //application Layer
             service.AddScoped<ICourseService, CourseService>();
+            service.AddScoped<IuserService, UserService>();
 
             //Infra Data Layer
             service.AddScoped<ICourseRepository, CourseRepository>();
+            service.AddScoped<IUserRepository, UserRepository>();
         }
     }
 }
